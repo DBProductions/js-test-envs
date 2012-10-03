@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>LCOV - jsTestDriver.conf-coverage.dat - src/modules/Device.js</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="title">LCOV - code coverage report</td></tr>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+    <tr>
+      <td width="100%">
+        <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="35%" class="headerValue"><a href="../../index.html">top level</a> - <a href="index.html">src/modules</a> - Device.js<span style="font-size: 80%;"> (source / <a href="Device.js.func.html">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="15%"></td>
+            <td width="10%" class="headerCovTableHead">Hit</td>
+            <td width="10%" class="headerCovTableHead">Total</td>
+            <td width="15%" class="headerCovTableHead">Coverage</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">jsTestDriver.conf-coverage.dat</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntry">1</td>
+            <td class="headerCovTableEntry">37</td>
+            <td class="headerCovTableEntryLo">2.7 %</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Date:</td>
+            <td class="headerValue">2012-07-11</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntryHi">-</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="headerItem">Branches:</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntryHi">-</td>
+          </tr>
+          <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+  </table>
+
+  <table cellpadding=0 cellspacing=0 border=0>
+    <tr>
+      <td><br></td>
+    </tr>
+    <tr>
+      <td>
+<pre class="sourceHeading">           Branch data     Line data    Source code</pre>
+<pre class="source">
+<a name="1"><span class="lineNum">       1 </span>                :            : /**</a>
+<span class="lineNum">       2 </span>                :            :  * Provides specific device properties
+<span class="lineNum">       3 </span>                :            :  *
+<span class="lineNum">       4 </span>                :            :  * @module Device
+<span class="lineNum">       5 </span>                :            :  */
+<span class="lineNum">       6 </span>                :<span class="lineCov">          1 : define([</span>
+<span class="lineNum">       7 </span>                :            : 
+<span class="lineNum">       8 </span>                :            :     ], function () {
+<span class="lineNum">       9 </span>                :            : 
+<span class="lineNum">      10 </span>                :            :     /**
+<span class="lineNum">      11 </span>                :            :      * This is the description for the device module
+<span class="lineNum">      12 </span>                :            :      *
+<span class="lineNum">      13 </span>                :            :      * @class Device
+<span class="lineNum">      14 </span>                :            :      * @constructor
+<span class="lineNum">      15 </span>                :            :      */
+<span class="lineNum">      16 </span>                :<span class="lineNoCov">          0 :     function Device (options) {}</span>
+<span class="lineNum">      17 </span>                :            : 
+<span class="lineNum">      18 </span>                :            :     /**
+<span class="lineNum">      19 </span>                :            :      * return an array with screen-width and -height as elements
+<span class="lineNum">      20 </span>                :            :      *
+<span class="lineNum">      21 </span>                :            :      * @method getScreenSize
+<span class="lineNum">      22 </span>                :            :      * @return {Object} array
+<span class="lineNum">      23 </span>                :            :      */
+<span class="lineNum">      24 </span>                :<span class="lineNoCov">          0 :     Device.prototype.getScreenSize = function getScreenSize() {</span>
+<span class="lineNum">      25 </span>                :<span class="lineNoCov">          0 :         return [screen.width, screen.height];</span>
+<span class="lineNum">      26 </span>                :            :     }
+<span class="lineNum">      27 </span>                :            : 
+<span class="lineNum">      28 </span>                :            :     /**
+<span class="lineNum">      29 </span>                :            :      * return an array with viewport-width and -height as elements
+<span class="lineNum">      30 </span>                :            :      *
+<span class="lineNum">      31 </span>                :            :      * @method getViewportSize
+<span class="lineNum">      32 </span>                :            :      * @return {Object} array
+<span class="lineNum">      33 </span>                :            :      */
+<span class="lineNum">      34 </span>                :<span class="lineNoCov">          0 :     Device.prototype.getViewportSize = function getViewportSize() {</span>
+<span class="lineNum">      35 </span>                :<span class="lineNoCov">          0 :         var viewportwidth = 0,</span>
+<span class="lineNum">      36 </span>                :            :             viewportheight = 0;
+<span class="lineNum">      37 </span>                :<span class="lineNoCov">          0 :         if (window.innerWidth) {</span>
+<span class="lineNum">      38 </span>                :<span class="lineNoCov">          0 :             viewportwidth = window.innerWidth;</span>
+<span class="lineNum">      39 </span>                :<span class="lineNoCov">          0 :         } else if (document.body &amp;&amp; document.body.offsetWidth) {</span>
+<span class="lineNum">      40 </span>                :<span class="lineNoCov">          0 :             viewportwidth = document.body.offsetWidth;</span>
+<span class="lineNum">      41 </span>                :            :         }
+<span class="lineNum">      42 </span>                :<span class="lineNoCov">          0 :         if (window.innerHeight) {</span>
+<span class="lineNum">      43 </span>                :<span class="lineNoCov">          0 :             viewportheight = window.innerHeight;</span>
+<span class="lineNum">      44 </span>                :<span class="lineNoCov">          0 :         } else if (document.body &amp;&amp; document.body.offsetHeight) {</span>
+<span class="lineNum">      45 </span>                :<span class="lineNoCov">          0 :             viewportheight = document.body.offsetHeight;</span>
+<span class="lineNum">      46 </span>                :            :         }
+<span class="lineNum">      47 </span>                :<span class="lineNoCov">          0 :         return [viewportwidth, viewportheight];</span>
+<span class="lineNum">      48 </span>                :            :     }
+<span class="lineNum">      49 </span>                :            : 
+<span class="lineNum">      50 </span>                :            :     /** 
+<span class="lineNum">      51 </span>                :            :      * return the platform
+<span class="lineNum">      52 </span>                :            :      *
+<span class="lineNum">      53 </span>                :            :      * @method getPlatform
+<span class="lineNum">      54 </span>                :            :      * @return {String} platform
+<span class="lineNum">      55 </span>                :            :      */
+<span class="lineNum">      56 </span>                :<span class="lineNoCov">          0 :     Device.prototype.getPlatform = function getPlatform() {</span>
+<span class="lineNum">      57 </span>                :<span class="lineNoCov">          0 :         return navigator.platform;</span>
+<span class="lineNum">      58 </span>                :            :     }
+<span class="lineNum">      59 </span>                :            : 
+<span class="lineNum">      60 </span>                :            :     /** 
+<span class="lineNum">      61 </span>                :            :      * return the useragent
+<span class="lineNum">      62 </span>                :            :      *
+<span class="lineNum">      63 </span>                :            :      * @method getUserAgent
+<span class="lineNum">      64 </span>                :            :      * @return {String} userAgent
+<span class="lineNum">      65 </span>                :            :      */
+<span class="lineNum">      66 </span>                :<span class="lineNoCov">          0 :     Device.prototype.getUserAgent = function getUserAgent() {</span>
+<span class="lineNum">      67 </span>                :<span class="lineNoCov">          0 :         if (navigator.userAgent.match(/iPad/i)) {</span>
+<span class="lineNum">      68 </span>                :<span class="lineNoCov">          0 :                 return 'ipad';</span>
+<span class="lineNum">      69 </span>                :<span class="lineNoCov">          0 :         } else if (navigator.userAgent.match(/iPhone/i)) {</span>
+<span class="lineNum">      70 </span>                :<span class="lineNoCov">          0 :             return 'iphone';</span>
+<span class="lineNum">      71 </span>                :            :         } else {
+<span class="lineNum">      72 </span>                :<span class="lineNoCov">          0 :                 return 'browser';</span>
+<span class="lineNum">      73 </span>                :            :         }
+<span class="lineNum">      74 </span>                :            :     }
+<span class="lineNum">      75 </span>                :            : 
+<span class="lineNum">      76 </span>                :            :     /** 
+<span class="lineNum">      77 </span>                :            :      * return the language
+<span class="lineNum">      78 </span>                :            :      *
+<span class="lineNum">      79 </span>                :            :      * @method getLang
+<span class="lineNum">      80 </span>                :            :      * @return {String} language
+<span class="lineNum">      81 </span>                :            :      */
+<span class="lineNum">      82 </span>                :<span class="lineNoCov">          0 :     Device.prototype.getLang = function getLang() {</span>
+<span class="lineNum">      83 </span>                :<span class="lineNoCov">          0 :         var userLang = (navigator.language) ? navigator.language : navigator.userLanguage;</span>
+<span class="lineNum">      84 </span>                :<span class="lineNoCov">          0 :         return userLang.replace(&quot;-&quot;, &quot;_&quot;);</span>
+<span class="lineNum">      85 </span>                :            :     }
+<span class="lineNum">      86 </span>                :            : 
+<span class="lineNum">      87 </span>                :            :     /** 
+<span class="lineNum">      88 </span>                :            :      * get current device orientation
+<span class="lineNum">      89 </span>                :            :      *
+<span class="lineNum">      90 </span>                :            :      * @method getOrientation
+<span class="lineNum">      91 </span>                :            :      * @return {String} platform
+<span class="lineNum">      92 </span>                :            :      */
+<span class="lineNum">      93 </span>                :<span class="lineNoCov">          0 :     Device.prototype.getOrientation = function getOrientation() {</span>
+<span class="lineNum">      94 </span>                :<span class="lineNoCov">          0 :         var orient = window.orientation;</span>
+<span class="lineNum">      95 </span>                :<span class="lineNoCov">          0 :         if (!orient || orient === 0) { // normal portrait orientation</span>
+<span class="lineNum">      96 </span>                :            :             //console.log('normal portrait orientation');
+<span class="lineNum">      97 </span>                :<span class="lineNoCov">          0 :             return 'p';</span>
+<span class="lineNum">      98 </span>                :<span class="lineNoCov">          0 :         } else if (orient === -90) { // landscape, rotated clockwise</span>
+<span class="lineNum">      99 </span>                :            :             //console.log('landscape, rotated clockwise');
+<span class="lineNum">     100 </span>                :<span class="lineNoCov">          0 :             return 'l';</span>
+<span class="lineNum">     101 </span>                :<span class="lineNoCov">          0 :         } else if (orient === 90) { // landscape, rotated counterclockwise</span>
+<span class="lineNum">     102 </span>                :            :             //console.log('landscape, rotated counterclockwise');
+<span class="lineNum">     103 </span>                :<span class="lineNoCov">          0 :             return 'l';</span>
+<span class="lineNum">     104 </span>                :<span class="lineNoCov">          0 :         } else if (orient === 180) { // portrait, upside down</span>
+<span class="lineNum">     105 </span>                :            :             //console.log('portrait, upside down');
+<span class="lineNum">     106 </span>                :<span class="lineNoCov">          0 :             return 'p';</span>
+<span class="lineNum">     107 </span>                :            :         }
+<span class="lineNum">     108 </span>                :            :     }
+<span class="lineNum">     109 </span>                :            : 
+<span class="lineNum">     110 </span>                :<span class="lineNoCov">          0 :     return Device;</span>
+<span class="lineNum">     111 </span>                :            : });
+</pre>
+      </td>
+    </tr>
+  </table>
+  <br>
+
+  <table width="100%" border=0 cellspacing=0 cellpadding=0>
+    <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+    <tr><td class="versionInfo">Generated by: <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_parent">LCOV version 1.9</a></td></tr>
+  </table>
+  <br>
+
+</body>
+</html>

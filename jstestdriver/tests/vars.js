@@ -1,0 +1,1 @@
+var userLang = 'de';

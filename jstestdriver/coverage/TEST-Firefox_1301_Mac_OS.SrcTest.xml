@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Firefox_1301_Mac_OS.SrcTest" errors="0" failures="0" tests="2" time="0.0010">
+<testcase classname="Firefox_1301_Mac_OS.SrcTest" name="testA" time="0.0010"/>
+<testcase classname="Firefox_1301_Mac_OS.SrcTest" name="testB" time="0.0"/>
+<system-out><![CDATA[[WARN] srcTest testA[WARN] srcTest testB]]></system-out>
+</testsuite>

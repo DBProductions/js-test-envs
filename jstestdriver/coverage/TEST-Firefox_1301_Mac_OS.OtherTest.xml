@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Firefox_1301_Mac_OS.OtherTest" errors="0" failures="0" tests="3" time="0.0010">
+<testcase classname="Firefox_1301_Mac_OS.OtherTest" name="testA" time="0.0"/>
+<testcase classname="Firefox_1301_Mac_OS.OtherTest" name="testB" time="0.0010"/>
+<testcase classname="Firefox_1301_Mac_OS.OtherTest" name="testC" time="0.0"/>
+<system-out><![CDATA[[LOG] otherTest starts...
+[WARN] qunit-script
+[LOG] script starts...[WARN] testB]]></system-out>
+</testsuite>

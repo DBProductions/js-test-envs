@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Firefox_1301_Mac_OS.Module B" errors="0" failures="0" tests="3" time="0.0020">
+<testcase classname="Firefox_1301_Mac_OS.Module B" name="test first test within module" time="0.0"/>
+<testcase classname="Firefox_1301_Mac_OS.Module B" name="test second test within module" time="0.0020"/>
+<testcase classname="Firefox_1301_Mac_OS.Module B" name="test third test within module" time="0.0"/>
+<system-out><![CDATA[[WARN] qunitTest]]></system-out>
+</testsuite>
