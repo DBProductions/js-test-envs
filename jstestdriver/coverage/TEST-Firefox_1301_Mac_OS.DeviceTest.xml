@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Firefox_1301_Mac_OS.DeviceTest" errors="0" failures="0" tests="4" time="0.0010">
-<testcase classname="Firefox_1301_Mac_OS.DeviceTest" name="testA" time="0.0"/>
-<testcase classname="Firefox_1301_Mac_OS.DeviceTest" name="testB" time="0.0010"/>
-<testcase classname="Firefox_1301_Mac_OS.DeviceTest" name="testC" time="0.0"/>
-<testcase classname="Firefox_1301_Mac_OS.DeviceTest" name="testD" time="0.0"/>
-<system-out><![CDATA[[WARN] testB[WARN] testD]]></system-out>
-</testsuite>

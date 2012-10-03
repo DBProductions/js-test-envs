@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Firefox_1301_Mac_OS.Module A" errors="0" failures="0" tests="2" time="0.0010">
-<testcase classname="Firefox_1301_Mac_OS.Module A" name="test first test within module" time="0.0"/>
-<testcase classname="Firefox_1301_Mac_OS.Module A" name="test second test within module" time="0.0010"/>
-</testsuite>
