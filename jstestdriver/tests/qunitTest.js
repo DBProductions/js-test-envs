@@ -19,6 +19,5 @@ test("second test within module", function() {
 });
 
 test("third test within module", function() {
-	jstestdriver.console.warn("qunitTest");
     ok( true, "all pass" );
 });
