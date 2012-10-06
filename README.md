@@ -1,18 +1,18 @@
-## JavaScript testing enviroments
+# JavaScript testing enviroments
 
-### QUnit 
+## QUnit 
 [QUnit](http://qunitjs.com/)
  - Version 1.11
 
-### Jasmine
+## Jasmine
 [Jasmine](http://pivotal.github.com/jasmine/)
  - Version 1.2
 
-### Sinon
+## Sinon
 [Sinon](http://sinonjs.org)
  - Version 1.3.2
 
-### js-test-driver
+## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
  - start a server `java -jar JsTestDriver-1.3.4.b.jar --port 9876`
  - capture your browser by going to http://localhost:9876
