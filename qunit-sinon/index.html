@@ -1,46 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>QUnit/Sinon.JS</title>
-    <link rel="stylesheet" href="lib/qunit.css" type="text/css" media="screen" />
-</head>
-<body>
-    <h1 id="qunit-header">QUnit/Sinon.JS Test</h1>
-    <h2 id="qunit-banner"></h2>
-    <h2 id="qunit-userAgent"></h2>
-    <ol id="qunit-tests"></ol>
-    <script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="lib/qunit.js"></script>
-    <script type="text/javascript" src="lib/sinon-1.3.2.js"></script>
-    <!-- Source and test files go here -->
-    <script>
-    test("Using spies", function () {
-	    var spy = sinon.spy();
-	    spy();
-	
-	    ok(spy.called);
-	    ok(spy.calledOnce); 
-    });	
-    /*
-     * 
-     put in seperate file
-     
-    test("Stubbing global environments": function () {
-	    this.stub(jQuery, "ajax");
-	    jQuery.ajax("/url", {});
-	
-	    ok(jQuery.ajax.called);
-    });
-    */
-   
-    test("Some timing stuff", function () {
-	    var spy = sinon.spy();
-	    setTimeout(function() {
-	    	spy();
-	    	ok(spy.called);
-	    }, 150);
-	    ok(!spy.called); 
-    });
-    </script>
-</body>
+    <head>
+    	<meta charset="utf-8">
+    	<title>QUnit 1.11 / Sinon 1.4.2 Example</title>
+    	<link rel="stylesheet" href="lib/qunit-1.11.css">
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <script src="lib/qunit-1.11.js"></script>
+        <script src="lib/sinon-1.3.2.js"></script>
+        <script src="tests/qunitsinonTest.js"></script>
+    </body>
 </html>
