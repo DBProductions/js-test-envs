@@ -1,11 +1,16 @@
 Different JavaScript enviroments for testing source code.
 
+## QUnit 
+Version 1.10.0
 [QUnit](http://qunitjs.com/)
 
+## Jasmine
 [Jasmine](http://pivotal.github.com/jasmine/)
 
+## Sinon
 [Sinon](http://sinonjs.org)
 
+## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
  - start a server `java -jar JsTestDriver-1.3.4.b.jar --port 9876`
  - capture your browser by going to http://localhost:9876
