@@ -1,15 +1,16 @@
 ## JavaScript testing enviroments
 
 ### QUnit 
- - Version 1.11
 [QUnit](http://qunitjs.com/)
+ - Version 1.11
 
 ### Jasmine
 [Jasmine](http://pivotal.github.com/jasmine/)
+ - Version 1.2
 
 ### Sinon
- - Version 1.3.2
 [Sinon](http://sinonjs.org)
+ - Version 1.3.2
 
 ### js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
