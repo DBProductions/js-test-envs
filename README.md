@@ -14,6 +14,7 @@
 
 ## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
+ - Version 1.3.4
  - start a server `java -jar JsTestDriver-1.3.4.b.jar --port 9876`
  - capture your browser by going to http://localhost:9876
  - run tests `java -jar JsTestDriver-1.3.4.b.jar --config jsTestDriver.conf --tests all`
