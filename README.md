@@ -11,6 +11,10 @@
 ## Sinon
 [Sinon](http://sinonjs.org)
  - Version 1.3.2
+ 
+## YUITest
+[YUITest](http://developer.yahoo.com/yui/yuitest/)
+ - Version 3
 
 ## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
