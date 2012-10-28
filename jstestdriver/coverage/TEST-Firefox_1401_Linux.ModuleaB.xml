@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Firefox_1401_Linux.Module B" errors="0" failures="0" tests="3" time="0.0050000004">
+<testcase classname="Firefox_1401_Linux.Module B" name="test first test within module" time="0.002"/>
+<testcase classname="Firefox_1401_Linux.Module B" name="test second test within module" time="0.002"/>
+<testcase classname="Firefox_1401_Linux.Module B" name="test third test within module" time="0.001"/>
+</testsuite>
