@@ -1,4 +1,5 @@
-# JavaScript testing enviroments
+# JavaScript testing environments
+Different JavaScript testing environments, ready to use, with very simple examples.
 
 ## QUnit 
 [QUnit](http://qunitjs.com/)
