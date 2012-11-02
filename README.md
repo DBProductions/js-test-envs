@@ -17,12 +17,12 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## Mocha
 [Mocha](http://visionmedia.github.com/mocha/)
  - Version 1.3.0
-`mocha test.js`
+ - `mocha mocha/test.js`
 
 ## Nodeunit
 [Nodeunit](https://github.com/caolan/nodeunit)
  - Version 0.7.4
-`nodeunit test.js`
+ - `nodeunit nodeunit/test.js`
 
 ## QUnit 
 [QUnit](http://qunitjs.com/)
