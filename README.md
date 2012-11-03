@@ -1,6 +1,11 @@
 # JavaScript testing environments
 Different JavaScript testing environments, ready to use, with very simple examples.
 
+## CasperJS
+[CasperJS](http://casperjs.org/)
+ - Version 1.0.0
+ - `casperjs casperjs/test.js`
+
 ## Jasmine
 [Jasmine](http://pivotal.github.com/jasmine/)
  - Version 1.2
