@@ -1,6 +1,12 @@
 # JavaScript testing environments
 Different JavaScript testing environments, ready to use, with very simple examples.
 
+## Buster.JS
+[Buster.JS](http://busterjs.org)
+ - Version 0.6.2 Beta 4
+ - `cd busterjs`
+ - `buster test`
+
 ## CasperJS
 [CasperJS](http://casperjs.org/)
  - Version 1.0.0
@@ -13,6 +19,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
  - Version 1.3.4
+ - `cd jstestdriver`
  - start a server `java -jar JsTestDriver-1.3.4.b.jar --port 9876`
  - capture your browser by going to http://localhost:9876
  - run tests `java -jar JsTestDriver-1.3.4.b.jar --config jsTestDriver.conf --tests all`
@@ -40,4 +47,3 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## YUITest
 [YUITest](http://developer.yahoo.com/yui/yuitest/)
  - Version 3
-
