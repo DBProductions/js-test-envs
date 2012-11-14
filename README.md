@@ -19,7 +19,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
  - Version 1.3.4
- - `cd jstestdriver`
+ - `cd jstestdriver` 
  - start a server `java -jar JsTestDriver-1.3.4.b.jar --port 9876`
  - capture your browser by going to http://localhost:9876
  - run tests `java -jar JsTestDriver-1.3.4.b.jar --config jsTestDriver.conf --tests all`
@@ -35,6 +35,10 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 [Nodeunit](https://github.com/caolan/nodeunit)
  - Version 0.7.4
  - `nodeunit nodeunit/test.js`
+
+## PhantomJS
+[PhantomJS](http://phantomjs.org/)
+ - Version 1.7.0
 
 ## QUnit 
 [QUnit](http://qunitjs.com/)
