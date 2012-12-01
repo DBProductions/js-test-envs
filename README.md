@@ -16,6 +16,10 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 [Jasmine](http://pivotal.github.com/jasmine/)
  - Version 1.2
 
+## JSCheck
+[JSCheck](http://jscheck.org)
+ - `node jscheck/test.js`
+
 ## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
  - Version 1.3.4
