@@ -37,7 +37,7 @@
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2012-10-06</td>
+            <td class="headerValue">2012-12-02</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">0</td>
@@ -99,18 +99,18 @@
 <span class="lineNum">      28 </span>                :            :     };
 <span class="lineNum">      29 </span>                :            : 
 <span class="lineNum">      30 </span>                :<span class="lineCov">          1 :     window.test = function(name, expected, test) {</span>
-<span class="lineNum">      31 </span>                :<span class="lineCov">          6 :     ﻿  QUnitTestCase.prototype['test ' + name] = function() {</span>
-<span class="lineNum">      32 </span>                :<span class="lineCov">          6 :         ﻿  if(this.lifecycle.setup) {</span>
+<span class="lineNum">      31 </span>                :<span class="lineCov">          5 :     ﻿  QUnitTestCase.prototype['test ' + name] = function() {</span>
+<span class="lineNum">      32 </span>                :<span class="lineCov">          5 :         ﻿  if(this.lifecycle.setup) {</span>
 <span class="lineNum">      33 </span>                :<span class="lineNoCov">          0 :         ﻿  ﻿  this.lifecycle.setup();</span>
 <span class="lineNum">      34 </span>                :            :         ﻿  }
-<span class="lineNum">      35 </span>                :<span class="lineCov">          6 :        ﻿  ﻿  if(expected.constructor === Number) {</span>
+<span class="lineNum">      35 </span>                :<span class="lineCov">          5 :        ﻿  ﻿  if(expected.constructor === Number) {</span>
 <span class="lineNum">      36 </span>                :<span class="lineNoCov">          0 :        ﻿  ﻿  ﻿  expectAsserts(expected);﻿</span>
 <span class="lineNum">      37 </span>                :            :        ﻿  ﻿  } else {
-<span class="lineNum">      38 </span>                :<span class="lineCov">          6 :        ﻿  ﻿  ﻿  test = expected;</span>
+<span class="lineNum">      38 </span>                :<span class="lineCov">          5 :        ﻿  ﻿  ﻿  test = expected;</span>
 <span class="lineNum">      39 </span>                :            :        ﻿  ﻿  }
-<span class="lineNum">      40 </span>                :<span class="lineCov">          6 :        ﻿  ﻿  test.call(this.lifecycle);</span>
+<span class="lineNum">      40 </span>                :<span class="lineCov">          5 :        ﻿  ﻿  test.call(this.lifecycle);</span>
 <span class="lineNum">      41 </span>                :            :        ﻿  ﻿
-<span class="lineNum">      42 </span>                :<span class="lineCov">          6 : ﻿  ﻿  ﻿  if(this.lifecycle.teardown) {</span>
+<span class="lineNum">      42 </span>                :<span class="lineCov">          5 : ﻿  ﻿  ﻿  if(this.lifecycle.teardown) {</span>
 <span class="lineNum">      43 </span>                :<span class="lineNoCov">          0 : ﻿  ﻿  ﻿  ﻿  this.lifecycle.teardown();</span>
 <span class="lineNum">      44 </span>                :            : ﻿  ﻿  ﻿  }
 <span class="lineNum">      45 </span>                :            : ﻿  ﻿  };
@@ -121,7 +121,7 @@
 <span class="lineNum">      50 </span>                :            :     };
 <span class="lineNum">      51 </span>                :            : 
 <span class="lineNum">      52 </span>                :<span class="lineCov">          1 :     window.ok = function(actual, msg) {</span>
-<span class="lineNum">      53 </span>                :<span class="lineCov">          7 :         assertTrue(msg ? msg : '', !!actual);</span>
+<span class="lineNum">      53 </span>                :<span class="lineCov">          5 :         assertTrue(msg ? msg : '', !!actual);</span>
 <span class="lineNum">      54 </span>                :            :     };
 <span class="lineNum">      55 </span>                :            : 
 <span class="lineNum">      56 </span>                :<span class="lineCov">          1 :     window.equals = function(a, b, msg) {</span>

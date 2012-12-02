@@ -1,17 +1,18 @@
 UserTest = TestCase("UserTest");
 
-var user = new myapp.User({name:"jsTestDriver"});
+var user;
 
 UserTest.prototype.setUp = function () {
-    //jstestdriver.console.info("setUp UserTest");
+    user = new myapp.User({name:"jsTestDriver"});
 }
 
 UserTest.prototype.testUsergetName = function () {
-    jstestdriver.console.log("log output");
+    jstestdriver.console.log("run testUsergetName");
     assertEquals("Test Output", "jsTestDriver", user.getProp("name"));
 }
 
 UserTest.prototype.testUsersetName = function () {
+    jstestdriver.console.log("run testUsersetName");
     user.setProp("name", "testing javascript");
     assertEquals("Test Output", "testing javascript", user.getProp("name"));
 }
@@ -34,5 +35,5 @@ UserTest.prototype.testTest = function () {
 }
 
 UserTest.prototype.tearDown = function () {
-    //jstestdriver.console.info("tearDown UserTest");
+    delete user;    
 }

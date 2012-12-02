@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Firefox_1401_Linux.Module A" errors="0" failures="0" tests="2" time="0.002">
-<testcase classname="Firefox_1401_Linux.Module A" name="test first test within module" time="0.001"/>
-<testcase classname="Firefox_1401_Linux.Module A" name="test second test within module" time="0.001"/>
-</testsuite>

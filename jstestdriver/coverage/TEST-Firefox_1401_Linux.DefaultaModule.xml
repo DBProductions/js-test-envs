@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Firefox_1401_Linux.Default Module" errors="0" failures="0" tests="1" time="0.004">
-<testcase classname="Firefox_1401_Linux.Default Module" name="test Using spies" time="0.004"/>
-</testsuite>
