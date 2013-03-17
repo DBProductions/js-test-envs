@@ -8,7 +8,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
  - `buster test`
 
 ## Zombie
-[Zombie.js](http://casperjs.org/)
+[Zombie.js](http://zombie.labnotes.org/)
  - Version 1.4.1
  - `node zombie/test.js`
 
