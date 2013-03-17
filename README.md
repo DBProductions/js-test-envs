@@ -7,6 +7,11 @@ Different JavaScript testing environments, ready to use, with very simple exampl
  - `cd busterjs`
  - `buster test`
 
+## Zombie
+[Zombie.js](http://casperjs.org/)
+ - Version 1.4.1
+ - `node zombie/test.js`
+
 ## CasperJS
 [CasperJS](http://casperjs.org/)
  - Version 1.0.0
