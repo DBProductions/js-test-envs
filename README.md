@@ -7,11 +7,6 @@ Different JavaScript testing environments, ready to use, with very simple exampl
  - `cd busterjs`
  - `buster test`
 
-## Zombie
-[Zombie.js](http://zombie.labnotes.org/)
- - Version 1.4.1
- - `node zombie/test.js`
-
 ## CasperJS
 [CasperJS](http://casperjs.org/)
  - Version 1.0.0
@@ -20,10 +15,12 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## Jasmine
 [Jasmine](http://pivotal.github.com/jasmine/)
  - Version 1.2
+ - Client-Side testing open jasmine/index.html
 
 ## JSCheck
 [JSCheck](http://jscheck.org)
- - `node jscheck/test.js`
+ - Client-Side testing open jscheck/index.html
+ - Server-Side testing `node jscheck/test.js`
 
 ## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
@@ -48,6 +45,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## PhantomJS
 [PhantomJS](http://phantomjs.org/)
  - Version 1.7.0
+ - `phantomjs phantomjs/test.js`
 
 ## QUnit 
 [QUnit](http://qunitjs.com/)
@@ -60,3 +58,8 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## YUITest
 [YUITest](http://developer.yahoo.com/yui/yuitest/)
  - Version 3
+
+## Zombie
+[Zombie.js](http://zombie.labnotes.org/)
+ - Version 1.4.1
+ - `node zombie/test.js`

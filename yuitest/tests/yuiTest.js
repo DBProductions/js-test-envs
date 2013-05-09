@@ -1,13 +1,18 @@
+/**
+ * Create a YUI instance 
+ * populate it with the required modules node, console, test
+ */
 YUI().use('node', 'console', 'test', function (Y) {
-
+    /**
+     * create a namespace, Y.example.test
+     */
     Y.namespace("example.test");
-
+    /**
+     * create a first test case
+     */
     Y.example.test.DataTestCase = new Y.Test.Case({
-        //name of the test case - if not provided, one is auto-generated
+        
         name : "Data Tests",
-        //---------------------------------------------------------------------
-        // setUp and tearDown methods - optional
-        //---------------------------------------------------------------------
         /*
          * Sets up data that is needed by each test.
          */
@@ -24,9 +29,9 @@ YUI().use('node', 'console', 'test', function (Y) {
         tearDown : function () {
             delete this.data;
         },
-        //---------------------------------------------------------------------
-        // Test methods - names must begin with "test"
-        //---------------------------------------------------------------------
+        /**
+         * testName
+         */
         testName : function () {
             var Assert = Y.Assert;
 
@@ -34,6 +39,9 @@ YUI().use('node', 'console', 'test', function (Y) {
             Assert.isString(this.data.name);
             Assert.areEqual("test", this.data.name);
         },
+        /**
+         * testYear
+         */
         testYear : function () {
             var Assert = Y.Assert;
 
@@ -41,6 +49,9 @@ YUI().use('node', 'console', 'test', function (Y) {
             Assert.isNumber(this.data.year);
             Assert.areEqual(2007, this.data.year);
         },
+        /**
+         * testBeta
+         */
         testBeta : function () {
             var Assert = Y.Assert;
 
@@ -50,12 +61,12 @@ YUI().use('node', 'console', 'test', function (Y) {
         }
     });
 
+    /**
+     * create a second test case
+     */
     Y.example.test.ArrayTestCase = new Y.Test.Case({
-        //name of the test case - if not provided, one is auto-generated
+        
         name : "Array Tests",
-        //---------------------------------------------------------------------
-        // setUp and tearDown methods - optional
-        //---------------------------------------------------------------------
         /*
          * Sets up data that is needed by each test.
          */
@@ -68,21 +79,27 @@ YUI().use('node', 'console', 'test', function (Y) {
         tearDown : function () {
             delete this.data;
         },
-        //---------------------------------------------------------------------
-        // Test methods - names must begin with "test"
-        //---------------------------------------------------------------------
+        /**
+         * testPop
+         */
         testPop : function () {
             var Assert = Y.Assert;
             var value = this.data.pop();
             Assert.areEqual(4, this.data.length);
             Assert.areEqual(4, value);
         },
+        /**
+         * testPush
+         */
         testPush : function () {
             var Assert = Y.Assert;
             this.data.push(5);
             Assert.areEqual(6, this.data.length);
             Assert.areEqual(5, this.data[5]);
         },
+        /**
+         * testSplice
+         */
         testSplice : function () {
             var Assert = Y.Assert;
             this.data.splice(2, 1, 6, 7);
@@ -91,21 +108,30 @@ YUI().use('node', 'console', 'test', function (Y) {
             Assert.areEqual(7, this.data[3]);
         }
     });
-
+    
+    /**
+     * create the test suite
+     */
     Y.example.test.ExampleSuite = new Y.Test.Suite("Example Suite");
+    /**
+     * add test cases
+     */
     Y.example.test.ExampleSuite.add(Y.example.test.DataTestCase);
     Y.example.test.ExampleSuite.add(Y.example.test.ArrayTestCase);
-
+    /**
+     * add to test runner
+     */
     Y.Test.Runner.add(Y.example.test.ExampleSuite);
-	
-	//create the console
+	/**
+     * create the console
+     */
     var r = new Y.Console({
         newestOnTop : false,
-        style: 'block' // to anchor in the example content
+        style: 'block'
     });
-    
     r.render('#testLogger');
-
-    //run the tests
+    /**
+     * run the tests
+     */
     Y.Test.Runner.run();
 });
