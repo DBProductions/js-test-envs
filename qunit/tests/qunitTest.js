@@ -1,36 +1,36 @@
 module("module A");
 
-test("first test", function() {
-    ok(1 == "1", "Passed!");
-    equal(1, 1, "Passed!");
-    notEqual(1, 2, "Passed!");
-});
-
-test("second test", function() {
-    ok( 1 == "1", "Passed!" );
-    equal(1, 1, "Passed");
-    notEqual(1, 2, "Passed!");
+test("test user object", function() {
+    var user = new User({name:'Peter', surname:'Test', age: 0});
+    ok( typeof user == "object", "user object has the right type" );
+    equal(user.getFullName(), 'Peter Test', "user object gives accepted fullname back");
+    equal(user.isAdult(), false, "current user is not adult");
+    notEqual(user.isAdult(), true, "current user is not adult");
 });
 
 module("module B", {
-    uid: null,
+    user: null,
     setup: function() {
         // prepare something for all following tests
-        this.uid = 5;
+        this.user = new User({name:'Peter', surname:'Test', age: 0});
     },
     teardown: function() {
         // clean up after each test
+        this.user = null;
     }
 });
 
-test("first test", function() {
-    ok( 1 == "1", "Passed!" );
-    equal(this.uid, 5, "Passed!");
-    notEqual(this.uid, 6, "Passed!");
-});
+test("test userlist object", function() {
+    var userList = new UserList();
+    
+    ok( typeof this.user == "object", "user object has the right type" );
+    ok( typeof userList == "object", "userlist object has the right type" );
+    
+    userList.addUser(this.user);
+    equal(userList.getLength(), 1, "user list has right length");
+    equal(userList.getUsers().length, 1, "user list has right length");
 
-test("second test", function() {
-    ok( 1 == "1", "Passed!" );
-    equal(this.uid, 5, "Passed!");
-    notEqual(this.uid, 6, "Passed!");
+    userList.addUser(new User({name:'Hans', surname:'Test', age: 18}));
+    equal(userList.getLength(), 2, "user list has right length");
+    equal(userList.getUsers().length, 2, "user list has right length");
 });

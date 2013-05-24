@@ -1,5 +1,3 @@
-var assert = require('assert');
-
 describe('Array', function() {
     describe('#indexOf()', function() {
         it('do something', function() {

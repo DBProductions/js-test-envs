@@ -35,7 +35,8 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## Mocha
 [Mocha](http://visionmedia.github.com/mocha/)
  - Version 1.3.0
- - `mocha mocha/test.js`
+ - Client-Side testing open mocha/index.html
+ - Server-Side testing `mocha mocha/test.js`
 
 ## Nodeunit
 [Nodeunit](https://github.com/caolan/nodeunit)

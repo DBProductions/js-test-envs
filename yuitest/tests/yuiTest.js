@@ -23,7 +23,7 @@ YUI().use('node', 'console', 'test', function (Y) {
                 beta: true
             };
         },
-        /*
+        /**
          * Cleans up everything that was created by setUp().
          */
         tearDown : function () {
@@ -108,6 +108,24 @@ YUI().use('node', 'console', 'test', function (Y) {
             Assert.areEqual(7, this.data[3]);
         }
     });
+
+    /**
+     * create a third test case with mock
+     */
+    Y.example.test.MockTestCase = new Y.Test.Case({
+        name : "Mock Tests",
+        testMock : function () {
+            var mock = Y.Mock();
+            Y.Mock.expect(mock, {
+                method: 'doSomething',
+                args: [Y.Mock.Value.String] 
+            });
+            
+            mock.doSomething('test');
+
+            Y.Mock.verify(mock);
+        }
+    });
     
     /**
      * create the test suite
@@ -118,6 +136,7 @@ YUI().use('node', 'console', 'test', function (Y) {
      */
     Y.example.test.ExampleSuite.add(Y.example.test.DataTestCase);
     Y.example.test.ExampleSuite.add(Y.example.test.ArrayTestCase);
+    Y.example.test.ExampleSuite.add(Y.example.test.MockTestCase);
     /**
      * add to test runner
      */

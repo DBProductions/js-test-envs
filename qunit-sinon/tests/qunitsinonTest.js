@@ -1,6 +1,8 @@
+module("module Spies");
+
 test("Using spies", function () {
     var spy = sinon.spy();
-	spy();
+    spy();
 	
 	ok(spy.called, 'spy called');
 	ok(spy.calledOnce, 'spy called once');
@@ -12,6 +14,8 @@ test("Using spies", function () {
 	spy();
 	notEqual(spy.callCount, 4, 'spy callCount is not 4');
 });
+
+module("module Stubs");
 
 test("Using stubs", function () {
     var callback = sinon.stub();
