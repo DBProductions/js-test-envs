@@ -7,6 +7,12 @@ function User(params) {
     var surname = params.surname || '';
     var age = params.age || 0;
     /**
+     * get name of the user
+     */
+    this.getName = function getName() {
+        return name;
+    }
+    /**
      * get full name of the user
      */
     this.getFullName = function getFullName() {
@@ -47,7 +53,7 @@ function UserList(users) {
      * get last user
      */
     this.getLastUser = function getLastUser() {
-        return _users[users.length-1];
+        return _users[_users.length-1];
     }
     /**
      * get length of user list
