@@ -21,7 +21,6 @@ module("module Userlist", {
 test("test userlist object", function() {
     var userList = new UserList();
     
-    ok(typeof this.user == "object", "user object has the right type");
     ok(typeof userList == "object", "userlist object has the right type");
     
     userList.addUser(this.user);
@@ -41,8 +40,6 @@ test("test userlist object", function() {
     var userArr = [new User({name:'Petra', surname:'Test', age: 18}),
                    new User({name:'Anja', surname:'Test', age: 18})];
     userList.addUsers(userArr);               
-    equal(userList.getUsers().length, 4, "user list has right length");    
-
     var userFromList = userList.getLastUser();
     equal(userFromList.getName(), "Anja", "last user from list has the right name");
 });
