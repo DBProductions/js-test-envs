@@ -16,6 +16,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 [Jasmine](http://pivotal.github.com/jasmine/)
  - Version 1.2
  - Client-Side testing open jasmine/index.html
+ - Server-Side testing `jasmine-node jasmine/specs/jasmineNode.spec.js`
 
 ## JSCheck
 [JSCheck](http://jscheck.org)
