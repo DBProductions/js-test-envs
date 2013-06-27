@@ -25,6 +25,7 @@ function User(params) {
         return age >= 18;
     }
 }
+(typeof window !== 'undefined' ? window : exports).User = User;
 
 /**
  * userlist object
@@ -77,3 +78,4 @@ function UserList(users) {
         }
     }
 }
+(typeof window !== 'undefined' ? window : exports).UserList = UserList;
