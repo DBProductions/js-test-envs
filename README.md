@@ -49,6 +49,11 @@ Different JavaScript testing environments, ready to use, with very simple exampl
  - Version 1.7.0
  - `phantomjs phantomjs/test.js`
 
+## SlimerJS
+[SlimerJS](http://slimerjs.org/)
+ - Version 0.8.4
+ - `slimerjs slimerjs/test.js`
+
 ## QUnit 
 [QUnit](http://qunitjs.com/)
  - Version 1.11

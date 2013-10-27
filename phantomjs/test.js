@@ -5,7 +5,7 @@ console.log('The default user agent is ' + page.settings.userAgent);
 var t = Date.now();
 
 page.open('http://www.dbproductions.de', function () {
-	t = Date.now() - t;
+    t = Date.now() - t;
     console.log('Loading time ' + t + ' msec');
     
     /**
@@ -22,7 +22,9 @@ page.open('http://www.dbproductions.de', function () {
         return document.getElementById('primary').innerText;
     });
     console.log(ua);
-
+    /**
+     * make a screenshot
+     */
     page.render('phantomjs/dbproductions.png');
     phantom.exit();
 });
