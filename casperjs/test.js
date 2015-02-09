@@ -1,45 +1,33 @@
-var casper = require('casper').create();
-
-casper.start('http://dbproductions.de/', function() {
-    this.echo(this.getCurrentUrl(), 'INFO');    
-    this.test.assertTitle('DBProductions | 我的新的技术博克', 'title');
-    if (this.exists('#wrapper')) {
-        this.test.assertTrue(true);
-    } else {
-        this.test.assertTrue(false);
-    }
-    this.clickLabel('JavaScript', 'a');
-});
-
-casper.then(function() {
-    this.echo(this.getCurrentUrl(), 'INFO');
-    this.test.assertTitle('JavaScript | DBProductions', 'title');
-    this.test.assertEqual(this.fetchText('h1'), 'JavaScript', 'h1');
-    this.clickLabel('JS MVC Frameworks', 'a');
-});
-
-casper.then(function() {
-    this.echo(this.getCurrentUrl(), 'INFO');
-    this.test.assertTitle('JS MVC Frameworks | DBProductions', 'title');
-    casper.back();
-});
-
-casper.then(function() {
-    this.echo(this.getCurrentUrl(), 'INFO');
-    this.test.assertTitle('JavaScript | DBProductions', 'title');
-    if (this.exists('#s')) {
-        this.test.assertTrue(true);
-        this.fill('form#searchform', { 's': 'casperjs'}, true);
-    } else {
-        this.echo('#s not found', 'ERROR');
-    }
-});
-
-casper.then(function() {
-    this.echo(this.getCurrentUrl(), 'INFO');
-    this.test.assertTitle('casperjs | Suchergebnisse | DBProductions', 'title');
-});
-
-casper.run(function() {
-    this.test.renderResults(true);
+casper.test.begin('', 1, function suite(test) {
+    casper.start('http://dbproductions.de/', function() {
+        this.echo(this.getCurrentUrl(), 'INFO');
+        test.assertTitle('DBProductions | 我的新技术博客', 'startpage title');
+        this.clickLabel('JavaScript', 'a');
+    });
+    casper.then(function() {
+        this.echo(this.getCurrentUrl(), 'INFO');
+        test.assertTitle('JavaScript | DBProductions', 'page title');
+        this.clickLabel('Testing', 'a');
+    });
+    casper.then(function() {
+        this.echo(this.getCurrentUrl(), 'INFO');
+        test.assertTitle('Testing | DBProductions', 'page title');
+        casper.back();
+    });
+    casper.then(function() {
+        this.echo(this.getCurrentUrl(), 'INFO');
+        test.assertTitle('JavaScript | DBProductions', 'page title');
+        test.assertExists('form[action="http://www.dbproductions.de/de/"]', "main form is found");
+        this.fill('form[action="http://www.dbproductions.de/de/"]', {
+            s: "casperjs"
+        }, true);
+    });
+    casper.then(function() {
+        this.echo(this.getCurrentUrl(), 'INFO');
+        test.assertEqual(this.getCurrentUrl(), 'http://www.dbproductions.de/de/?s=casperjs');
+        test.assertTitle('casperjs | Suchergebnisse | DBProductions', 'title');
+    });
+    casper.run(function() {
+        test.renderResults(true);
+    });
 });

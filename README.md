@@ -9,8 +9,8 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 
 ## CasperJS
 [CasperJS](http://casperjs.org/)
- - Version 1.0.0
- - `casperjs casperjs/test.js`
+ - Version 1.1.0-beta3
+ - `casperjs test casperjs/test.js`
 
 ## Jasmine
 [Jasmine](http://pivotal.github.com/jasmine/)
@@ -68,5 +68,5 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 
 ## Zombie
 [Zombie.js](http://zombie.labnotes.org/)
- - Version 1.4.1
+ - Version 2.5.1
  - `node zombie/test.js`
