@@ -3,9 +3,9 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 
 ## Buster.JS
 [Buster.JS](http://busterjs.org)
- - Version 0.6.2 Beta 4
+ - Version 0.7.18 Beta 5
  - `cd busterjs`
- - `buster test`
+ - `buster-test`
 
 ## CasperJS
 [CasperJS](http://casperjs.org/)
@@ -14,7 +14,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 
 ## Jasmine
 [Jasmine](http://pivotal.github.com/jasmine/)
- - Version 1.2
+ - Version 1.14.3
  - Client-Side testing open jasmine/index.html
  - Server-Side testing `jasmine-node jasmine/specs/jasmineNode.spec.js`
 
