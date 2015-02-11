@@ -10,6 +10,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## CasperJS
 [CasperJS](http://casperjs.org/)
  - Version 1.1.0-beta3
+ - `casperjs casperjs/screenshot.js`
  - `casperjs test casperjs/test.js`
 
 ## Jasmine
