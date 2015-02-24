@@ -42,7 +42,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 
 ## Nodeunit
 [Nodeunit](https://github.com/caolan/nodeunit)
- - Version 0.7.4
+ - Version 0.9.0
  - `nodeunit nodeunit/test.js`
 
 ## PhantomJS
