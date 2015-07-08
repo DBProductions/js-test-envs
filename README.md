@@ -1,7 +1,7 @@
 # JavaScript testing environments
 Different JavaScript testing environments, ready to use, with very simple examples.
 
-## CasperJS
+## CasperJS (needs PhantomJS v1.x)
 [CasperJS](http://casperjs.org/)
  - Version 1.1.0-beta3
  - `casperjs casperjs/screenshot.js`
@@ -41,7 +41,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 
 ## PhantomJS
 [PhantomJS](http://phantomjs.org/)
- - Version 1.7.0
+ - Version 2.0.0
  - `phantomjs phantomjs/test.js`
 
 ## SlimerJS
