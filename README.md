@@ -1,12 +1,6 @@
 # JavaScript testing environments
 Different JavaScript testing environments, ready to use, with very simple examples.
 
-## Buster.JS
-[Buster.JS](http://busterjs.org)
- - Version 0.7.18 Beta 5
- - `cd busterjs`
- - `buster-test`
-
 ## CasperJS
 [CasperJS](http://casperjs.org/)
  - Version 1.1.0-beta3
@@ -71,3 +65,6 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 [Zombie.js](http://zombie.labnotes.org/)
  - Version 2.5.1
  - `node zombie/test.js`
+
+## Feedback
+Star this repo if you found it useful. Use the github issue tracker to give feedback on this repo.
