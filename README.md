@@ -1,9 +1,10 @@
 # JavaScript testing environments
 Different JavaScript testing environments, ready to use, with very simple examples.
 
-## CasperJS (needs PhantomJS v1.x)
+## CasperJS
 [CasperJS](http://casperjs.org/)
  - Version 1.1.0-beta3
+ - `casperjs casperjs/links.js`
  - `casperjs casperjs/screenshot.js`
  - `casperjs test casperjs/test.js`
 
@@ -21,7 +22,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## js-test-driver
 [js-test-driver](http://code.google.com/p/js-test-driver/)
  - Version 1.3.4
- - `cd jstestdriver` 
+ - `cd jstestdriver`
  - start a server `java -jar JsTestDriver-1.3.4.b.jar --port 9876`
  - capture your browser by going to `http://localhost:9876`
  - run tests `java -jar JsTestDriver-1.3.4.b.jar --config jsTestDriver.conf --tests all`
@@ -47,16 +48,16 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## SlimerJS
 [SlimerJS](http://slimerjs.org/)
  - Version 0.8.4
- - `slimerjs slimerjs/test.js`
+ - `node_modules/slimerjs/src/slimerjs slimerjs/test.js`
 
-## QUnit 
+## QUnit
 [QUnit](http://qunitjs.com/)
  - Version 1.11
- 
+
 ## Sinon
 [Sinon](http://sinonjs.org)
  - Version 1.3.2
- 
+
 ## YUITest
 [YUITest](http://developer.yahoo.com/yui/yuitest/)
  - Version 3
