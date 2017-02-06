@@ -67,5 +67,19 @@ Different JavaScript testing environments, ready to use, with very simple exampl
  - Version 2.5.1
  - `node zombie/test.js`
 
+# JavaScript assertion libraries
+
+## Assert
+[Assert](https://nodejs.org/api/assert.html)
+
+## Chai
+[Chai](http://chaijs.com/)
+
+## Must
+[Must.js](https://github.com/moll/js-must/)
+
+## Unexpected
+[Unexpected](http://unexpected.js.org/)
+
 ## Feedback
 Star this repo if you found it useful. Use the github issue tracker to give feedback on this repo.
