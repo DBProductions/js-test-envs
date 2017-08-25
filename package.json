@@ -21,10 +21,13 @@
   },
   "homepage": "https://github.com/DBProductions/js-test-envs",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "jasmine": "^2.5.3",
-    "mocha": "^3.2.0",
-    "slimerjs": "^0.10.2",
-    "zombie": "^5.0.5"
+    "chai": "4.1.1",
+    "jasmine": "2.8.0",
+    "mocha": "3.5.0",
+    "slimerjs": "0.10.3",
+    "zombie": "5.0.5"
+  },
+  "dependencies": {
+    "growl": "1.10.2"
   }
 }
