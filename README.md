@@ -30,7 +30,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
  - js-test-driver creates a dat file to create a html report change to /coverage and use: `genhtml jsTestDriver.conf-coverage.dat`
 
 ## Mocha
-[Mocha](http://visionmedia.github.com/mocha/)
+[Mocha](http://mochajs.org/)
  - Version 1.3.0
  - Client-Side testing open mocha/index.html
  - Server-Side testing `mocha mocha/test.js`
