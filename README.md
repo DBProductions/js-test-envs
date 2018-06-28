@@ -9,7 +9,7 @@ Different JavaScript testing environments, ready to use, with very simple exampl
  - `casperjs test casperjs/test.js`
 
 ## Jasmine
-[Jasmine](http://pivotal.github.com/jasmine/)
+[Jasmine](https://jasmine.github.io/)
  - Version 1.14.3
  - Client-Side testing open jasmine/index.html
  - Server-Side testing `jasmine-node jasmine/specs/jasmineNode.spec.js`
@@ -19,31 +19,11 @@ Different JavaScript testing environments, ready to use, with very simple exampl
  - Client-Side testing open jscheck/index.html
  - Server-Side testing `node jscheck/test.js`
 
-## js-test-driver
-[js-test-driver](http://code.google.com/p/js-test-driver/)
- - Version 1.3.4
- - `cd jstestdriver`
- - start a server `java -jar JsTestDriver-1.3.4.b.jar --port 9876`
- - capture your browser by going to `http://localhost:9876`
- - run tests `java -jar JsTestDriver-1.3.4.b.jar --config jsTestDriver.conf --tests all`
- - create coverage report `java -jar JsTestDriver-1.3.4.b.jar --config jsTestDriver.conf --tests all --testOutput coverage`
- - js-test-driver creates a dat file to create a html report change to /coverage and use: `genhtml jsTestDriver.conf-coverage.dat`
-
 ## Mocha
-[Mocha](http://visionmedia.github.com/mocha/)
+[Mocha](https://mochajs.org/)
  - Version 1.3.0
  - Client-Side testing open mocha/index.html
  - Server-Side testing `mocha mocha/test.js`
-
-## Nodeunit
-[Nodeunit](https://github.com/caolan/nodeunit)
- - Version 0.9.0
- - `nodeunit nodeunit/test.js`
-
-## PhantomJS
-[PhantomJS](http://phantomjs.org/)
- - Version 2.0.0
- - `phantomjs phantomjs/test.js`
 
 ## SlimerJS
 [SlimerJS](http://slimerjs.org/)
@@ -57,10 +37,6 @@ Different JavaScript testing environments, ready to use, with very simple exampl
 ## Sinon
 [Sinon](http://sinonjs.org)
  - Version 1.3.2
-
-## YUITest
-[YUITest](http://developer.yahoo.com/yui/yuitest/)
- - Version 3
 
 ## Zombie
 [Zombie.js](http://zombie.labnotes.org/)
