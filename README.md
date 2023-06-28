@@ -1,23 +1,11 @@
 # JavaScript testing environments
 Different JavaScript testing environments, ready to use, with very simple examples.
 
-## CasperJS
-[CasperJS](http://casperjs.org/)
- - Version 1.1.0-beta3
- - `casperjs casperjs/links.js`
- - `casperjs casperjs/screenshot.js`
- - `casperjs test casperjs/test.js`
-
 ## Jasmine
 [Jasmine](https://jasmine.github.io/)
  - Version 1.14.3
  - Client-Side testing open jasmine/index.html
  - Server-Side testing `jasmine-node jasmine/specs/jasmineNode.spec.js`
-
-## JSCheck
-[JSCheck](http://jscheck.org)
- - Client-Side testing open jscheck/index.html
- - Server-Side testing `node jscheck/test.js`
 
 ## Mocha
 [Mocha](https://mochajs.org/)
